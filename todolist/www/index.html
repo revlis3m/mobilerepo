@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/themes/silver.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <!-- <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <div data-role="page">
+
+        <div data-role="header">
+            <h1>ToDo List App</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Ajouter une tâche...">
+                <button type="button" id="addTaskBtn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Ajouter</button>
+                <button type="button" id="resetTasksBtn" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Réinitialiser</button>
+            </form>
+            <!-- Les tâches seront ajoutées ici -->
+            <h3 style="text-align: center; border-radius : 10px 10px 0px 0px; color : black; background : #0071bc; height : 30px; margin-bottom : -15px;">Tache en cours</h3>
+            <ul id="taskInprogress" data-role="listview" data-inset="true" class="taskList">
+                <!-- Liste des taches finis -->
+            </ul>
+            <h3 style="margin-top: 10%; text-align: center; border-radius : 10px 10px 0px 0px; color : black; background : #0071bc; height : 30px; margin-bottom : -15px">Tache termine</h3>
+            <ul id="taskDone" data-role="listview" data-inset="true" class="taskList">
+                <!-- Liste des taches en cours -->
+            </ul>
+
+        </div><!-- /content -->
+    
+        <div data-role="footer" data-position="fixed" class="footer">
+            <h4>DIC3 &copy; 2024</h4>
+        </div><!-- /footer -->
+    </div>
+</body>
+</html>

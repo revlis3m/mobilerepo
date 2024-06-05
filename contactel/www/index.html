@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/themes/silver.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+    <title>Contactel</title>
+</head>
+<body>
+    <!-- Page principale -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Contactel</h1>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+            <a href="#addContactPage" data-role="button">ajouter</a>
+            <ul id="contactList" data-role="listview" data-inset="true">
+                <li>
+                    <a href="#">
+                        <img src="img/utilisateur.png" alt="Contact" class="contactImage">
+                        <div class="contactDetails">
+                            <h3>Silver</h3>
+                            <p>212121212</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /content -->
+    
+        <!-- <div data-role="footer" data-position="fixed" class="footer">
+            <h4>DIC3 &copy; 2024</h4>
+        </div>/footer -->
+    </div><!-- /page -->
+
+    <!-- Page pour ajouter un nouveau contact -->
+    <div data-role="page" id="addContactPage">
+        <div data-role="header">
+            <h1>Ajouter Contact</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+            <form id="addContactForm">
+                <label for="contactName">Nom:</label>
+                <input type="text" id="contactName" name="contactName" required>
+                <label for="contactNumber">Numéro de téléphone:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required>
+                <input type="submit" value="Ajouter Contact" data-role="button">
+            </form>
+            <a href="#home" data-role="button" data-rel="back">Retour</a>
+        </div><!-- /content -->
+
+        <!-- <div data-role="footer" data-position="fixed" class="footer">
+            <h4>DIC3 &copy; 2024</h4>
+        </div>/footer -->
+    </div><!-- /page -->
+</body>
+</html>

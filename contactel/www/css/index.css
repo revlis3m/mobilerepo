@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+[data-role="header"] {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+[data-role="header"] h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.ui-content {
+    padding: 15px;
+}
+
+.ui-content a[data-role="button"] {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.ui-content a[data-role="button"]:hover {
+    background-color: #005bb5;
+}
+
+#addButton{
+    width: 90%;
+}
+
+#contactList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contactList li {
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#contactList li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+}
+
+#contactList li a:hover {
+    background-color: #f9f9f9;
+}
+
+.contactImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#contactList h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+#contactList p {
+    margin: 5px 0 0;
+    color: #777;
+}

@@ -1,0 +1,27 @@
+body{
+    margin: 2%;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#taskList li {
+    margin-bottom: 2%;
+}
+
+ul {
+    list-style: none;
+}
+
+#taskInput{
+    width: 100%;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-right: 10px;
+}
